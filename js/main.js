@@ -21,6 +21,21 @@ $(document).ready(function(){
     });
 
 
+
+    if($('.main_slider > div').length >1){
+        $('.main_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots:true,
+            //fade:true,
+            //autoplay: true,
+            //speed: 1000,
+            //autoplaySpeed:9000,
+        });
+    }
+
+
 });
 
 
