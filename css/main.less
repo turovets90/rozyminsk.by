@@ -194,6 +194,9 @@ header{
         @media (max-width:767px){
           width:40%;
         }
+        @media (max-width:575px){
+          width: 50%;
+        }
       }
       &.col_right{
         .flex();
@@ -201,6 +204,9 @@ header{
         .ai-center();
         @media (max-width:767px){
           width: 60%;
+        }
+        @media (max-width:575px){
+          width: 50%;
         }
       }
 
@@ -250,11 +256,17 @@ header{
         @media (max-width:1200px){
           font-size: 14px;
         }
+        @media (max-width:575px){
+          font-size: 12px;
+        }
       }
       strong{
         color: #2F2F2F;
         @media (max-width:1200px){
           font-size: 14px;
+        }
+        @media (max-width:575px){
+          font-size: 12px;
         }
       }
     }
@@ -268,12 +280,20 @@ header{
   width: 30px;
   height: 25px;
   margin-left: 15px;
+  @media (max-width:575px){
+    width: 25px;
+    height: 19px;
+  }
   .hamburger{
     background: none;
     border:0;
     position: relative;
     width: 30px;
     height: 25px;
+    @media (max-width:575px){
+      width: 25px;
+      height: 19px;
+    }
     span{
       position: absolute;
       left: 0;
@@ -416,4 +436,29 @@ header{
       }
     }
   }
+}
+
+
+
+.preimuschestva{
+  background: #FFD9DA;
+
+  .pr_item{
+    picture{
+
+    }
+    .pr_title{
+      font-family: @Lora;
+      font-size: 22px;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 3px;
+    }
+    .pr_text{
+      font-size: 15px;
+      line-height: 19px;
+    }
+  }
+
 }
