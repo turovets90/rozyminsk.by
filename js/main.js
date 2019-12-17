@@ -26,14 +26,23 @@ $(document).ready(function(){
         $('.main_slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: false,
             dots:true,
-            //fade:true,
-            //autoplay: true,
-            //speed: 1000,
-            //autoplaySpeed:9000,
+            fade:true,
+            autoplay: true,
+            speed: 1000,
+            autoplaySpeed:9000,
         });
     }
+
+
+    $('.main_slider .slick_prev').click(function(){
+        $('.main_slider').slick('slickPrev');
+    });
+    $('.main_slider .slick_next').click(function(){
+        $('.main_slider').slick('slickNext');
+    });
+
 
 
 });
