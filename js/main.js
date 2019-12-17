@@ -44,6 +44,12 @@ $(document).ready(function(){
     });
 
 
+    $('.mm_catalogbtn').click(function(){
+        $(this).next().slideToggle();
+        $(this).toggleClass('act');
+    });
+
+
 
 });
 
