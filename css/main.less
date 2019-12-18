@@ -646,7 +646,7 @@ header{
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999;
   }
 }
 
@@ -2208,3 +2208,10 @@ img{
 }
 
 
+.amount span, .product_item .add_t_cart{
+  .transition(@transition_default);
+  &:hover{
+    background: #DA666A;
+    color: #fff;
+  }
+}
