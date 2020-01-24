@@ -1415,6 +1415,14 @@ h1, .h1{
     .j-center();
     .transition(@transition_default);
     opacity: 0;
+    a{
+      color: #222222;
+      text-decoration: none;
+      &:hover, &:focus{
+        text-decoration: none;
+        color: #222222;
+      }
+    }
     @media (max-width:767px){
       opacity: 1;
     }
@@ -2212,7 +2220,7 @@ img{
   .transition(@transition_default);
   &:hover{
     background: #DA666A;
-    color: #fff;
+    //color: #fff;
   }
 }
 
@@ -2323,4 +2331,32 @@ img{
 
 .modal-open, .modal{
   padding-right: 0 !important;
+}
+
+
+.cart .cart_link .cart_text span {
+ .flex();
+}
+
+.product_cart_list .pr_cart_item.total {
+ .flex();
+  .j-end();
+}
+
+.ms2_total_cost{
+  margin: 0 10px;
+}
+
+
+@media (min-width:576px){
+  .pr_cart_item{
+    a.text-center{
+      .flex();
+    }
+  }
+
+  .product_cart_list .img {
+    margin-right: 10px;
+    min-width: 80px;
+  }
 }
